@@ -2,6 +2,8 @@
 
 A simple Tkinter-based desktop application for editing CSV files and visualizing them as concept maps. This tool allows you to open, edit, and save CSV files in a text editor interface, then generate concept map visualizations in PNG, SVG, or PDF formats using the [ConceptMap](csv_concept_map.py) class.
 
+Propositions are used extensively in my book "Generative Analysis". This simple editor was created to help my readers visualize propositions as Concept Maps. Propositions are perfect inputs to Generative AI for the generation of code any many other artefacts.
+
 ---
 
 ## Features
