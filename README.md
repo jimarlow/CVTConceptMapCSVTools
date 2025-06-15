@@ -4,6 +4,14 @@ A simple Tkinter-based desktop application for editing CSV files and visualizing
 
 Propositions are used extensively in my book "Generative Analysis". This simple editor was created to help my readers visualize propositions as Concept Maps. Propositions are perfect inputs to Generative AI for the generation of code any many other artefacts.
 
+Propositions are defined as:
+
+`concept1 linking words concept2`
+
+They are stored comma delimited in CSV files as follows:
+
+`concept1, linking words, concept2`
+
 ---
 
 ## Features
