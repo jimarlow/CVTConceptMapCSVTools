@@ -1,0 +1,97 @@
+digraph {
+	"intruder sensor" [label="intruder sensor" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"armed/disarmed indicator" [label="armed/disarmed indicator" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sensor" [label="fire sensor" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"numeric pad" [label="numeric pad" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"reset button" [label="reset button" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sound" [label="fire sound" fillcolor=lightblue shape=rect style="rounded,filled"]
+	c3 [label=c3 fillcolor=lightblue shape=rect style="rounded,filled"]
+	"control panel" [label="control panel" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"intruder sound" [label="intruder sound" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"intruder sensors" [label="intruder sensors" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"intruder sounds" [label="intruder sounds" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"arm button" [label="arm button" fillcolor=lightblue shape=rect style="rounded,filled"]
+	intruder [label=intruder fillcolor=lightblue shape=rect style="rounded,filled"]
+	c6 [label=c6 fillcolor=lightblue shape=rect style="rounded,filled"]
+	siren [label=siren fillcolor=lightblue shape=rect style="rounded,filled"]
+	zones [label=zones fillcolor=lightblue shape=rect style="rounded,filled"]
+	"sounds for 30 minutes" [label="sounds for 30 minutes" fillcolor=lightblue shape=rect style="rounded,filled"]
+	PIN [label=PIN fillcolor=lightblue shape=rect style="rounded,filled"]
+	"burglar alarm" [label="burglar alarm" fillcolor=lightblue shape=rect style="rounded,filled"]
+	c2 [label=c2 fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sounds" [label="fire sounds" fillcolor=lightblue shape=rect style="rounded,filled"]
+	sensors [label=sensors fillcolor=lightblue shape=rect style="rounded,filled"]
+	"for 15 minutes" [label="for 15 minutes" fillcolor=lightblue shape=rect style="rounded,filled"]
+	user [label=user fillcolor=lightblue shape=rect style="rounded,filled"]
+	c5 [label=c5 fillcolor=lightblue shape=rect style="rounded,filled"]
+	"disarm button" [label="disarm button" fillcolor=lightblue shape=rect style="rounded,filled"]
+	fire [label=fire fillcolor=lightblue shape=rect style="rounded,filled"]
+	"numeric keypad" [label="numeric keypad" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sensortriggers" [label=triggers shape=plaintext]
+	"fire soundoverrides" [label=overrides shape=plaintext]
+	"disarm buttonturns off" [label="turns off" shape=plaintext]
+	sirenhas [label=has shape=plaintext]
+	PINenables [label=enables shape=plaintext]
+	"control panelhas" [label=has shape=plaintext]
+	firetriggers [label=triggers shape=plaintext]
+	"sensorsof type" [label="of type" shape=plaintext]
+	"intruder sensortriggers" [label=triggers shape=plaintext]
+	"disarm buttondisarm" [label=disarm shape=plaintext]
+	"intruder soundsounds" [label=sounds shape=plaintext]
+	"numeric keypadaccepts" [label=accepts shape=plaintext]
+	zonescontain [label=contain shape=plaintext]
+	c2l1 [label=l1 shape=plaintext]
+	c5l1 [label=l1 shape=plaintext]
+	userenters [label=enters shape=plaintext]
+	firesound [label=sound shape=plaintext]
+	"burglar alarmhas" [label=has shape=plaintext]
+	intrudertriggers [label=triggers shape=plaintext]
+	"control panelhas " [label="has " shape=plaintext]
+	"fire sensor" -> "fire sensortriggers"
+	"burglar alarm" -> "burglar alarmhas"
+	"control panelhas" -> "disarm button"
+	firesound -> "sounds for 30 minutes"
+	c5 -> c5l1
+	"intruder sensortriggers" -> "intruder sound"
+	"control panel" -> "control panelhas"
+	"numeric keypadaccepts" -> PIN
+	siren -> sirenhas
+	c2 -> c2l1
+	"control panel" -> "control panelhas "
+	"intruder soundsounds" -> "for 15 minutes"
+	user -> userenters
+	"control panelhas" -> "armed/disarmed indicator"
+	"intruder sensor" -> "intruder sensortriggers"
+	sirenhas -> "fire sounds"
+	"control panelhas" -> "arm button"
+	userenters -> PIN
+	c5l1 -> c6
+	sirenhas -> "intruder sounds"
+	c2l1 -> c3
+	"burglar alarmhas" -> zones
+	"sensorsof type" -> "intruder sensors"
+	fire -> firetriggers
+	PINenables -> "burglar alarm"
+	"disarm buttondisarm" -> "burglar alarm"
+	zones -> zonescontain
+	"fire sensortriggers" -> "fire sound"
+	zonescontain -> sensors
+	"fire soundoverrides" -> "intruder sound"
+	"intruder sound" -> "intruder soundsounds"
+	"control panelhas" -> "reset button"
+	firetriggers -> "fire sensor"
+	"control panelhas " -> "arm button"
+	PIN -> PINenables
+	"disarm buttonturns off" -> "armed/disarmed indicator"
+	"disarm button" -> "disarm buttondisarm"
+	"control panelhas" -> "numeric pad"
+	sensors -> "sensorsof type"
+	"sensorsof type" -> "fire sensor"
+	"control panelhas" -> "numeric keypad"
+	"fire sound" -> "fire soundoverrides"
+	"disarm button" -> "disarm buttonturns off"
+	intrudertriggers -> "intruder sensor"
+	fire -> firesound
+	intruder -> intrudertriggers
+	"numeric keypad" -> "numeric keypadaccepts"
+}

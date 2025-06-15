@@ -1,0 +1,92 @@
+digraph {
+	"numeric keypad" [label="numeric keypad" fillcolor=lightblue shape=rect style="rounded,filled"]
+	intruder [label=intruder fillcolor=lightblue shape=rect style="rounded,filled"]
+	"30 minutes" [label="30 minutes" fillcolor=lightblue shape=rect style="rounded,filled"]
+	user [label=user fillcolor=lightblue shape=rect style="rounded,filled"]
+	"15 minutes" [label="15 minutes" fillcolor=lightblue shape=rect style="rounded,filled"]
+	siren [label=siren fillcolor=lightblue shape=rect style="rounded,filled"]
+	"intruder sensor" [label="intruder sensor" fillcolor=lightblue shape=rect style="rounded,filled"]
+	sensors [label=sensors fillcolor=lightblue shape=rect style="rounded,filled"]
+	"control panel" [label="control panel" fillcolor=lightblue shape=rect style="rounded,filled"]
+	PIN [label=PIN fillcolor=lightblue shape=rect style="rounded,filled"]
+	zones [label=zones fillcolor=lightblue shape=rect style="rounded,filled"]
+	"intruder sound" [label="intruder sound" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"disarm button" [label="disarm button" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"burglar alarm" [label="burglar alarm" fillcolor=lightblue shape=rect style="rounded,filled"]
+	fire [label=fire fillcolor=lightblue shape=rect style="rounded,filled"]
+	"arm button" [label="arm button" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"armed/disarmed indicator" [label="armed/disarmed indicator" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sound" [label="fire sound" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"fire sensor" [label="fire sensor" fillcolor=lightblue shape=rect style="rounded,filled"]
+	PINenables [label=enables shape=plaintext]
+	"intruder sensortriggers" [label=triggers shape=plaintext]
+	"burglar alarmvalidates" [label=validates shape=plaintext]
+	"disarm buttondisarm" [label=disarm shape=plaintext]
+	"numeric keypadaccepts" [label=accepts shape=plaintext]
+	"burglar alarmmonitors" [label=monitors shape=plaintext]
+	userenters [label=enters shape=plaintext]
+	"intruder soundsounds for" [label="sounds for" shape=plaintext]
+	"fire sensortriggers" [label=triggers shape=plaintext]
+	"sensorsof type" [label="of type" shape=plaintext]
+	"disarm buttonturns off" [label="turns off" shape=plaintext]
+	sirenhas [label=has shape=plaintext]
+	"arm buttonturns on" [label="turns on" shape=plaintext]
+	"burglar alarmoperated by" [label="operated by" shape=plaintext]
+	"fire soundsounds for" [label="sounds for" shape=plaintext]
+	zonescontain [label=contain shape=plaintext]
+	"burglar alarmsounds" [label=sounds shape=plaintext]
+	"control panelhas" [label=has shape=plaintext]
+	firetriggers [label=triggers shape=plaintext]
+	"fire soundoverrides" [label=overrides shape=plaintext]
+	intrudertriggers [label=triggers shape=plaintext]
+	"arm buttonarm" [label=arm shape=plaintext]
+	siren -> sirenhas
+	intruder -> intrudertriggers
+	"burglar alarmmonitors" -> zones
+	sirenhas -> "fire sound"
+	"numeric keypad" -> "numeric keypadaccepts"
+	"sensorsof type" -> "intruder sensor"
+	"burglar alarmoperated by" -> "control panel"
+	"control panelhas" -> "numeric keypad"
+	"disarm buttonturns off" -> "armed/disarmed indicator"
+	"arm buttonarm" -> "burglar alarm"
+	"intruder soundsounds for" -> "15 minutes"
+	sensors -> "sensorsof type"
+	"burglar alarm" -> "burglar alarmvalidates"
+	"fire sensor" -> "fire sensortriggers"
+	"intruder sensortriggers" -> "intruder sound"
+	"control panelhas" -> "armed/disarmed indicator"
+	"disarm button" -> "disarm buttondisarm"
+	"fire sound" -> "fire soundoverrides"
+	"intruder sound" -> "intruder soundsounds for"
+	"control panel" -> "control panelhas"
+	"burglar alarm" -> "burglar alarmsounds"
+	"sensorsof type" -> "fire sensor"
+	"arm button" -> "arm buttonturns on"
+	"intruder sensor" -> "intruder sensortriggers"
+	"arm button" -> "arm buttonarm"
+	PIN -> PINenables
+	"burglar alarm" -> "burglar alarmmonitors"
+	"control panelhas" -> "disarm button"
+	"fire soundoverrides" -> "intruder sound"
+	"fire sound" -> "fire soundsounds for"
+	"burglar alarm" -> "burglar alarmoperated by"
+	"burglar alarmvalidates" -> PIN
+	"disarm button" -> "disarm buttonturns off"
+	"fire soundsounds for" -> "30 minutes"
+	intrudertriggers -> "intruder sensor"
+	zones -> zonescontain
+	zonescontain -> sensors
+	fire -> firetriggers
+	user -> userenters
+	PINenables -> "burglar alarm"
+	"fire sensortriggers" -> "fire sound"
+	"arm buttonturns on" -> "armed/disarmed indicator"
+	"burglar alarmsounds" -> siren
+	firetriggers -> "fire sensor"
+	"disarm buttondisarm" -> "burglar alarm"
+	sirenhas -> "intruder sound"
+	userenters -> PIN
+	"numeric keypadaccepts" -> PIN
+	"control panelhas" -> "arm button"
+}

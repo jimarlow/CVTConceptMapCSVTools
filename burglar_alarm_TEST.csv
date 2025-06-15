@@ -1,0 +1,28 @@
+arm button,arm,burglar alarm
+arm button,turns on,armed/disarmed indicator
+burglar alarm,monitors,zones
+burglar alarm,validates,PIN
+burglar alarm,sounds,siren
+burglar alarm,operated by,control panel
+control panel,has ,arm button
+control panel,has,armed/disarmed indicator
+control panel,has,numeric keypad
+control panel,has,disarm button
+disarm button,disarm,burglar alarm
+disarm button,turns off,armed/disarmed indicator
+fire,triggers,fire sensor
+fire sensor,triggers,fire sound
+fire sound,overrides,intruder sound
+fire sound,sounds for,30 minutes
+intruder,triggers,intruder sensor
+intruder sensor,triggers,intruder sound
+intruder sound,sounds for,15 minutes
+numeric keypad,accepts,PIN
+PIN,enables,burglar alarm
+sensors,of type,intruder sensor
+sensors,of type,fire sensor
+siren,has,fire sound
+siren,has,intruder sound
+user,enters,PIN
+zones,contain,sensors
+1,2,3

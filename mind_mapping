@@ -1,0 +1,89 @@
+digraph {
+	"Prof. Joseph D. Novak 1970s" [label="Prof. Joseph D. Novak 1970s" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"picture speaks 1000 words" [label="picture speaks 1000 words" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"Mind Mapping" [label="Mind Mapping" fillcolor=lightblue shape=rect style="rounded,filled"]
+	branches [label=branches fillcolor=lightblue shape=rect style="rounded,filled"]
+	structure [label=structure fillcolor=lightblue shape=rect style="rounded,filled"]
+	"Mind Map" [label="Mind Map" fillcolor=lightblue shape=rect style="rounded,filled"]
+	brain [label=brain fillcolor=lightblue shape=rect style="rounded,filled"]
+	imagination [label=imagination fillcolor=lightblue shape=rect style="rounded,filled"]
+	pictures [label=pictures fillcolor=lightblue shape=rect style="rounded,filled"]
+	"Concept Mapping" [label="Concept Mapping" fillcolor=lightblue shape=rect style="rounded,filled"]
+	colors [label=colors fillcolor=lightblue shape=rect style="rounded,filled"]
+	"central idea" [label="central idea" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"one word per branch" [label="one word per branch" fillcolor=lightblue shape=rect style="rounded,filled"]
+	"Tony Busan 1970s" [label="Tony Busan 1970s" fillcolor=lightblue shape=rect style="rounded,filled"]
+	text [label=text fillcolor=lightblue shape=rect style="rounded,filled"]
+	information [label=information fillcolor=lightblue shape=rect style="rounded,filled"]
+	concepts [label=concepts fillcolor=lightblue shape=rect style="rounded,filled"]
+	ideas [label=ideas fillcolor=lightblue shape=rect style="rounded,filled"]
+	"Mind Mappingsimilar to" [label="similar to" shape=plaintext]
+	structurecomprising [label=comprising shape=plaintext]
+	branchesrepresenting [label=representing shape=plaintext]
+	branchescomprising [label=comprising shape=plaintext]
+	"Mind Mappinggenerates" [label=generates shape=plaintext]
+	"Mind Mappingcommunicates" [label=communicates shape=plaintext]
+	"Mind Mappingstimulates" [label=stimulates shape=plaintext]
+	"Mind Mappingprinciple" [label=principle shape=plaintext]
+	"Concept Mappinginvented by" [label="invented by" shape=plaintext]
+	"Mind Mappingintegrates" [label=integrates shape=plaintext]
+	"central ideaassociated via" [label="associated via" shape=plaintext]
+	"Mind Mappinginvented by" [label="invented by" shape=plaintext]
+	brainassociates [label=associates shape=plaintext]
+	"Mind Mappingassociates" [label=associates shape=plaintext]
+	"Mind Mappingrecovers" [label=recovers shape=plaintext]
+	"Mind Mappinguses" [label=uses shape=plaintext]
+	"Mind Mapcomprising" [label=comprising shape=plaintext]
+	informationusing [label=using shape=plaintext]
+	"Mind Maphierarchic" [label=hierarchic shape=plaintext]
+	"ideasassociated via" [label="associated via" shape=plaintext]
+	"Mind Mappingcaptures" [label=captures shape=plaintext]
+	"Mind Mappingassociates" -> concepts
+	"Mind Maphierarchic" -> structure
+	"central idea" -> "central ideaassociated via"
+	"Mind Mappingcommunicates" -> information
+	informationusing -> "Mind Map"
+	"Mind Mappinguses" -> imagination
+	branches -> branchesrepresenting
+	"Mind Mapping" -> "Mind Mappinguses"
+	"central ideaassociated via" -> branches
+	"Mind Mapping" -> "Mind Mappingcommunicates"
+	"Mind Mappingrecovers" -> information
+	"Mind Mappingsimilar to" -> "Concept Mapping"
+	"Mind Mapping" -> "Mind Mappingrecovers"
+	"Concept Mappinginvented by" -> "Prof. Joseph D. Novak 1970s"
+	branchescomprising -> text
+	brain -> brainassociates
+	branches -> branchescomprising
+	"Mind Mappingassociates" -> ideas
+	"Mind Mappingcaptures" -> information
+	"Mind Mapping" -> "Mind Mappingsimilar to"
+	"Mind Mappinguses" -> colors
+	"Mind Map" -> "Mind Mapcomprising"
+	"Mind Mappingprinciple" -> "picture speaks 1000 words"
+	"Mind Mapping" -> "Mind Mappingprinciple"
+	"Mind Mapping" -> "Mind Mappingcaptures"
+	structure -> structurecomprising
+	"Concept Mapping" -> "Concept Mappinginvented by"
+	ideas -> "ideasassociated via"
+	"ideasassociated via" -> branches
+	"Mind Mapping" -> "Mind Mappinginvented by"
+	structurecomprising -> branches
+	branchesrepresenting -> ideas
+	"Mind Mappinginvented by" -> "Tony Busan 1970s"
+	"Mind Mappingsimilar to" -> brain
+	brainassociates -> concepts
+	"Mind Mappingintegrates" -> information
+	"Mind Map" -> "Mind Maphierarchic"
+	information -> informationusing
+	"Mind Mapping" -> "Mind Mappingintegrates"
+	"Mind Mappinguses" -> "one word per branch"
+	branchescomprising -> pictures
+	"Mind Mapping" -> "Mind Mappingstimulates"
+	"Mind Mapping" -> "Mind Mappinggenerates"
+	"Mind Mappingstimulates" -> imagination
+	"Mind Mapping" -> "Mind Mappingassociates"
+	brainassociates -> ideas
+	"Mind Mappinggenerates" -> information
+	"Mind Mapcomprising" -> "central idea"
+}
