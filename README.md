@@ -12,6 +12,37 @@ They are stored comma delimited in CSV files as follows:
 
 `concept1, linking words, concept2`
 
+Here is an example proposition CSV file for a Concept Map about Mind Mapping (`mind_mapping.csv`), which is another one of our favorite techniques:
+
+```Mind Map, comprising, central idea
+Mind Map, hierarchic, structure
+structure, comprising, branches
+branches, comprising, pictures
+branches, comprising, text
+branches, representing, ideas
+ideas, associated via, branches
+central idea, associated via, branches
+information, using, Mind Map
+Mind Mapping, captures, information
+Mind Mapping, communicates, information
+Mind Mapping, recovers, information
+Mind Mapping, generates, information
+Mind Mapping, integrates, information
+Mind Mapping, invented by, Tony Busan 1970s
+Mind Mapping, principle, picture speaks 1000 words
+Mind Mapping, uses, colors
+Mind Mapping, uses, one word per branch
+Mind Mapping, uses, imagination
+Mind Mapping, stimulates, imagination
+Mind Mapping, associates, ideas
+Mind Mapping, associates, concepts
+Mind Mapping, similar to,brain
+brain, associates, concepts
+brain, associates, ideas
+Mind Mapping, similar to, Concept Mapping
+Concept Mapping, invented by, Prof. Joseph D. Novak 1970s
+```
+
 ---
 
 ## Features
